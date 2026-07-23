@@ -1,0 +1,14 @@
+services:
+  movies:
+    image: devopsvinu/paymovies
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+
+  train:
+    image: devopsvinu/paytrain
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
